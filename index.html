@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder By Samra Waseem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Professional Resume</h1>
+    </header>
+    <main>
+        <form id="custom-resume-form">
+            <fieldset>
+                <legend>About You</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="fullName" placeholder="Your Name Here" required>
+
+                <label for="email-address">Email Address:</label> 
+                <input type="email" id="email-address" name="emailAddress" placeholder="example@domain.com" required>
+
+                <label for="contact-number">Contact Number:</label>
+                <input type="tel" id="contact-number" name="contactNumber" placeholder="123-456-7890" required>
+
+                <label for="upload-picture">Profile Picture:</label>
+                <input type="file" id="upload-picture" name="uploadPicture" accept="image/*" required>
+
+                <label for="summary-text">Personal Summary:</label>
+                <textarea name="summaryText" id="summary-text" rows="4" placeholder="Briefly introduce yourself..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education Details</legend>  
+                <label for="education-degree">Degree:</label>
+                <input type="text" id="education-degree" name="educationDegree" placeholder="E.g., Bachelor of Science">
+
+                <label for="education-school">School/University:</label>
+                <input type="text" id="education-school" name="educationSchool" placeholder="E.g., XYZ University">
+
+                <label for="education-date">Graduation Date:</label>
+                <input type="date" id="education-date" name="educationDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="job-role">Job Role:</label>
+                <input type="text" id="job-role" name="jobRole" placeholder="Your Job Title">
+
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="companyName" placeholder="Company Name">
+
+                <label for="job-dates">Duration:</label>
+                <input type="text" id="job-dates" name="jobDates" placeholder="E.g., Jan 2020 - Dec 2022">
+
+                <label for="job-description">Job Description:</label>
+                <textarea name="jobDescription" id="job-description" rows="4" placeholder="Describe your responsibilities..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Skills</legend>
+                <label for="skills-set">Skills:</label>
+                <textarea name="skillsSet" id="skills-set" rows="4" placeholder="E.g., JavaScript, React, Team Management" required></textarea>
+            </fieldset>
+
+            <button type="button" id="generate-button" onclick="generateResume()">Generate Resume</button>
+        </form>
+    </main>
+</body>
+</html>
